@@ -88,5 +88,9 @@ var ctx = canvas.getContext('2d');
   ctx.fillRect(0,290,1000,210);
   ctx.stroke();
   ctx.fill();
+  
+  ctx.font = '20px Arial';
+  ctx.fillStyle = 'black';
+  ctx.fillText('Cartoon Homework by Joshua Milian',363,20);
 
 }
