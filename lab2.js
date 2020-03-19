@@ -1,5 +1,5 @@
 let img = new Image();
-img.src = 'numberline2.PNG';
+img.src = 'numberline2.png';
 
 let canvas = document.querySelector('canvas');
 let ctx = canvas.getContext('2d');
