@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 3</title>
+  </head>
+  <body>
+    <form class="hey" action="index.html" method="post">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" maxlength="40" oninput="myFunction()"><br><br>
+      <label for="Notes">Notes:</label>
+      <br>
+      <textarea id="Notes" rows="10" cols="80"></textarea>
+      <br>
+      <input type="button" name="note" value="Submit" onclick="save()">
+      <input type="reset" value="Clear" onclick="clearClick()">
+      <input type="button" name="Undo" value="Undo" onclick="unDo()">
+    </form>
+
+    <p id="demo"></p>
+
+
+
+
+    <script>
+
+      function myFunction() {
+        var x = document.getElementById("title").value;
+        un = document.getElementById("title").value;
+        document.getElementById("demo").innerHTML = "You wrote: " + x;
+
+        }
+
+        function save(){
+          var fieldVal = document.getElementById('Notes').value;
+          localStorage.setItem('text',fieldVal);
+        }
+
+      </script>
+
+  </body>
+</html>
