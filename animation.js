@@ -1,5 +1,5 @@
 let img = new Image();
-img.src = 'sunClouds.PNG';
+img.src = 'sunClouds.png';
 
 let canvas = document.querySelector('canvas');
 let ctx = canvas.getContext('2d');
