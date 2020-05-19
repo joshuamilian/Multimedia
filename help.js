@@ -11,11 +11,11 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload (){
-  this.load.image('person', 'images/person.JPEG');
-  this.load.image('bucket', 'images/bucket.png');
-  this.load.image('beanie', 'images/beanie.png');
-  this.load.image('cap', 'images/cap.png');
-  this.load.image('top', 'images/top.png');
+  this.load.image('person', 'images2/person.JPEG');
+  this.load.image('bucket', 'images2/bucket.png');
+  this.load.image('beanie', 'images2/beanie.png');
+  this.load.image('cap', 'images2/cap.png');
+  this.load.image('top', 'images2/top.png');
 }
 
 function create (){
