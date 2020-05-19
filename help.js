@@ -11,7 +11,7 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload (){
-  this.load.image('background', 'images/background.JPEG');
+  this.load.image('person', 'images/person.JPEG');
   this.load.image('bucket', 'images/bucket.png');
   this.load.image('beanie', 'images/beanie.png');
   this.load.image('cap', 'images/cap.png');
@@ -19,7 +19,7 @@ function preload (){
 }
 
 function create (){
-  this.add.image(400, 300, 'background');
+  this.add.image(400, 300, 'person');
   var bucket = this.add.sprite(100, 100, 'bucket');
   var beanie = this.add.sprite(200, 200, 'beanie');
   var cap = this.add.sprite(300, 300, 'cap');
